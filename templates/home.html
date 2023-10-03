@@ -1,0 +1,22 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Similar Stocks Input</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Student Exam Output</legend>
+        </h1>
+        <div class="mb-3">
+            <label for="stock_name">Stockname:</label><br>
+            <input type="text" id="stock_name" name="stock_name" required><br><br>
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Get Similar Stocks" required />
+        </div>
+    </form>
+    <h2>
+       Following are the similar stocks {{results}}
+    </h2>
+   <body>
+</html>
